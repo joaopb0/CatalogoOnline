@@ -13,13 +13,13 @@ body{
     width: 300px;
     margin-top: 50px;
     margin-left: 25px;
-    background-color: transparent;
-    border: 2px solid #000; /* Outline border */
-    border-radius: 10px; /* Optional: Adds rounded corners to the border */
+    background: linear-gradient(pink, lightblue, lightyellow);
+    border: 2px solid rgb(179, 171, 171);
+    border-radius: 10px;
 }
 
 .listalateralindex p {
-    border-bottom: 1px solid #000; /* Line color and thickness */
+    border-bottom: 1px solid rgb(179, 171, 171);
 }
 
 .h1login{
