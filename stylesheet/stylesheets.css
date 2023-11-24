@@ -1,0 +1,32 @@
+body{
+    background-image: url(../img/Logoindex.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 800px;
+    background-color: transparent;
+}
+
+.containerindex {
+    position: relative;
+    height: 700px;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 25px;
+    background-color: transparent;
+    border: 2px solid #000; /* Outline border */
+    border-radius: 10px; /* Optional: Adds rounded corners to the border */
+}
+
+.listalateralindex p {
+    border-bottom: 1px solid #000; /* Line color and thickness */
+}
+
+.h1login{
+    color: blue;
+    text-align: center;
+}
+
+.listalateralindex{
+    text-align: center;
+}
