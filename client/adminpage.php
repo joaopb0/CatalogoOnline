@@ -1,3 +1,28 @@
+<?php
+    session_start();
+
+    if (isset($_SESSION["usuario"])) {
+        header("Location: ../server/indexadm.php");
+        exit();
+    }
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $usuario = $_POST["usuario"];
+        $senha = $_POST["senha"];
+
+        if ($result->num_rows > 0) {
+
+            $_SESSION["usuario"] = $usuario;
+            $_SESSION["login_time"] = time();
+
+            header("Location: ../server/indexadm.php");
+            exit();
+        } else {
+            echo "Credenciais inválidas. Por favor, tente novamente.";
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

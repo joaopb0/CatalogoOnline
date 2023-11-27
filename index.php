@@ -42,22 +42,22 @@
     <section>
         <div class="containerindex">
         <h5 class="listalateralindex">
-        <p><a href="#">Adesivos</a></p>
-        <p><a href="#">Blocos</a></p>
-        <p><a href="#">Brindes</a></p>
-        <p><a href="#">Caixas</a></p>
-        <p><a href="#">Calendários</a></p>
-        <p><a href="#">Canecas</a></p>
-        <p><a href="#">Cards</a></p>
-        <p><a href="#">Cartões</a></p>
-        <p><a href="#">Comandas</a></p>
-        <p><a href="#">Cópias e Encadernações</a></p>
-        <p><a href="#">Panfletos</a></p>
-        <p><a href="#">Papéis Seda</a></p>
-        <p><a href="#">Presentes</a></p>
-        <p><a href="#">Sacolas</a></p>
-        <p><a href="#">Tags</a></p>
-        <p><a href="#">Vale Presentes</a></p>
+        <p><a href="client/adesivos.php">Adesivos</a></p>
+        <p><a href="client/blocos.php">Blocos</a></p>
+        <p><a href="client/brindes.php">Brindes</a></p>
+        <p><a href="client/caixas.php">Caixas</a></p>
+        <p><a href="client/calendarios.php">Calendários</a></p>
+        <p><a href="client/canecas.php">Canecas</a></p>
+        <p><a href="client/cards.php">Cards</a></p>
+        <p><a href="client/cartoes.php">Cartões</a></p>
+        <p><a href="client/comandas.php">Comandas</a></p>
+        <p><a href="client/copias.php">Cópias e Encadernações</a></p>
+        <p><a href="client/panfleto.php">Panfletos</a></p>
+        <p><a href="client/papelseda.php">Papéis Seda</a></p>
+        <p><a href="client/presentes.php">Presentes</a></p>
+        <p><a href="client/sacolas.php">Sacolas</a></p>
+        <p><a href="client/tags.php">Tags</a></p>
+        <p><a href="client/valepresente.php">Vale Presentes</a></p>
         </h5>
         </div>
     </section>
