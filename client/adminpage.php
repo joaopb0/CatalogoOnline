@@ -15,7 +15,7 @@
             <input type="text" name="usuario" placeholder="Usuário">
         </div>
         <div class="inputbox">
-            <input type="password" name="senha" placeholder="Senha"> <!-- Alterado para type="password" para ocultar a senha -->
+            <input type="password" name="senha" placeholder="Senha">
         </div>
         <button type="submit" class="btn btn-primary">Entrar</button>
     </form>
