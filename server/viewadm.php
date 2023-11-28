@@ -70,6 +70,8 @@ if ($stmt->execute()) {
             echo '<td>' . $row['nome_produto'] . '</td>';
             echo '<td>' . $row['descricao_produto'] . '</td>';
             echo '<td><img src="/projeto/img/' . $row['imagem'] . '" alt="Imagem do Produto" style="max-width: 100px; max-height: 100px;"></td>';
+            echo '<td><a href="editar.php?id=' . $row['id'] . '" class="btn btn-primary">Editar</a></td>';
+            echo '<td><a href="excluir.php?id=' . $row['id'] . '" class="btn btn-danger">Excluir</a></td>';
             echo '</tr>';
         }
 
