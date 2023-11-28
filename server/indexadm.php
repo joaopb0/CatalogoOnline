@@ -37,17 +37,17 @@
 </nav>
 </header>
 <section>
-<div class="container">
-    <div class="d-flex justify-content-center">
-      <div class="col-md-6">
-        <button type="button" class="btn btn-success btn-block">Success</button>
-      </div>
-      <div class="col-md-6">
-        <button type="button" class="btn btn-warning btn-block">Warning</button>
+    <div class="container min-vh-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="row justify-content-center">
+        <div class="col-md-6 mb-3">
+        <a href="indexinsert.php"><button type="button" class="btn btn-success btn-block">Inserir</button></a>
+        </div>
+        <div class="col-md-6">
+          <a href="#"><button type="button" class="btn btn-warning btn-block">Visualizar</button></a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>   
 </body>
 </html>
