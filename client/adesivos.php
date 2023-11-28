@@ -31,7 +31,7 @@
             Acesso Administrativo
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="client\adminpage.php">Acesso Administrativo</a></li>
+            <li><a class="dropdown-item" href="adminpage.php">Acesso Administrativo</a></li>
           </ul>
         </li>
       </ul>
@@ -80,26 +80,28 @@
                 echo '<div class="row row-cols-' . $cardsPorLinha . ' g-4">';
                 
                 for ($i = 0; $i < $cardsPorPagina; $i++) {
-                    $row = $result->fetch_assoc();
-                    
-                    if (!$row) {
-                        break;  // Sai do loop se não houver mais produtos
-                    }
+    $row = $result->fetch_assoc();
 
-                    echo '<div class="col">';
-                    echo '<div class="card" style="width: 18rem;">';
-                    echo '<img src="/projeto/img/' . $row['imagem'] . '" class="card-img-top" alt="Imagem do Produto">';
-                    echo '<div class="card-body">';
-                    echo '<h5 class="card-title">' . $row['nome_produto'] . '</h5>';
-                    echo '<p class="card-text">' . $row['descricao_produto'] . '</p>';
-                    echo '<p class="card-text">Quantidade: ' . $row['quant_1'] . '</p>';
-                    echo '<p class="card-text">Valor: ' . $row['valor_1'] . '</p>';
-                    echo '<a href="#" class="btn btn-primary">Go somewhere</a>';
-                    echo '</div></div>';
-                    echo '</div>';
+    if (!$row) {
+        break;  
+    }
 
-                    $contadorCards++;
-                }
+    echo '<div class="col">';
+    echo '<div class="card" style="width: 18rem;">';
+    
+    echo '<img src="/projeto/img/' . $row['imagem'] . '" class="card-img-top img-fluid" alt="Imagem do Produto" style="max-width: 100%;">';
+    
+    echo '<div class="card-body">';
+    echo '<h5 class="card-title">' . $row['nome_produto'] . '</h5>';
+    echo '<p class="card-text">' . $row['descricao_produto'] . '</p>';
+    echo '<p class="card-text">Quantidade: ' . $row['quant_1'] . '</p>';
+    echo '<p class="card-text">Valor: ' . $row['valor_1'] . '</p>';
+    echo '<a href="contato.php" class="btn btn-primary">Orçamento</a>';
+    echo '</div></div>';
+    echo '</div>';
+
+    $contadorCards++;
+}
 
                 echo '</div>';
             }
