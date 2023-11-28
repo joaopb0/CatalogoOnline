@@ -21,9 +21,6 @@
           <a class="nav-link active" aria-current="page" href="#">Página Inicial</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Catálogo</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="#">Contato</a>
         </li>
         <li class="nav-item dropdown">

@@ -30,3 +30,7 @@ body{
 .listalateralindex{
     text-align: center;
 }
+
+.text-custom{
+    color: blue;
+}
