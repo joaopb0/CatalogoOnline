@@ -28,7 +28,7 @@
             Acesso Administrativo
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="client\adminpage.php">Acesso Administrativo</a></li>
+            <li><a class="dropdown-item" href="../client/adminpage.php">Acesso Administrativo</a></li>
           </ul>
         </li>
       </ul>
@@ -37,7 +37,7 @@
 </nav>
     </header>
     <section class="indexadm">
-        <form class="container" method="POST" action="insertadm.php">
+        <form class="container" method="POST" action="insertadm.php" enctype="multipart/form-data">
         <div class="row mb-3">
                 <div class="col-md-6">
                 <label for="nome_produto" class="form-label text-primary">Tipo de produto</label>
@@ -114,6 +114,12 @@
                 <div class="col-md-6">
                 <label for="valor_5" class="form-label text-primary">Valor5</label>
                 <input type="text" id="valor_5" name="valor_5" class="form-control">
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="imagem" class="form-label text-primary">Imagem do Produto</label>
+                    <input type="file" id="imagem" name="imagem" class="form-control">
+                </div>
             </div>
             <div>
             <button type="submit" class="btn btn-primary">Inserir</button>
