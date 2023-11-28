@@ -34,3 +34,10 @@ body{
 .text-custom{
     color: blue;
 }
+
+.formview{
+    width: 800px;
+    height: 400px;
+    margin-left: 300px;
+    background: black;
+}
