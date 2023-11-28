@@ -8,34 +8,44 @@
     <link rel="stylesheet" href="../stylesheet/stylesheets.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid menuindex">
-                <a class="navbar-brand indexpesquisar" href="#">Pesquisar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Página Inicial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Acesso Administrativo
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="client\adminpage.php">Acesso Administrativo</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid menuindex">
+
+            <a id="mostrarPesquisa" class="navbar-brand indexpesquisar" href="#">Pesquisar</a>
+
+            <form id="pesquisaForm" class="search-form" method="GET">
+                <div class="mb-3">
+                    <label for="termoPesquisa" class="form-label">Digite o termo de pesquisa:</label>
+                    <input type="text" class="form-control" id="termoPesquisa" name="termo">
                 </div>
+                <button type="submit" class="btn btn-primary">Buscar</button>
+            </form>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/projeto">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Acesso Administrativo
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="client\adminpage.php">Acesso Administrativo</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
     <section>
         <div class="formview">
@@ -101,5 +111,7 @@ $conn->close();
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha384-oP6HI/tZ1aX+LbLO5yPZL1nMqDEJwqO8/MD85TOeH6HOjPZZ6Z7sL/Z9MW9vI1Ea" crossorigin="anonymous"></script>
+    <script src="../script/pesquisaview.js"></script>
 </body>
 </html>

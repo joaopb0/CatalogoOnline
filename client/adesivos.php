@@ -61,6 +61,55 @@
         </h5>
         </div>
     </section>
+    <div class="containercard">
+        <?php
+        include '../dbconfig/bancoprodutos.php';
+
+        $cardsPorPagina = 9;
+        $cardsPorLinha = 3;
+        $contadorCards = 0;
+
+        $sql = "SELECT nome_produto, descricao_produto, quant_1, valor_1, imagem FROM produtos";
+        $result = $conn->query($sql);
+
+        if ($result && $result->num_rows > 0) {
+            $totalCards = $result->num_rows;
+            $totalPaginas = ceil($totalCards / $cardsPorPagina);
+
+            for ($pagina = 1; $pagina <= $totalPaginas; $pagina++) {
+                echo '<div class="row row-cols-' . $cardsPorLinha . ' g-4">';
+                
+                for ($i = 0; $i < $cardsPorPagina; $i++) {
+                    $row = $result->fetch_assoc();
+                    
+                    if (!$row) {
+                        break;  // Sai do loop se não houver mais produtos
+                    }
+
+                    echo '<div class="col">';
+                    echo '<div class="card" style="width: 18rem;">';
+                    echo '<img src="/projeto/img/' . $row['imagem'] . '" class="card-img-top" alt="Imagem do Produto">';
+                    echo '<div class="card-body">';
+                    echo '<h5 class="card-title">' . $row['nome_produto'] . '</h5>';
+                    echo '<p class="card-text">' . $row['descricao_produto'] . '</p>';
+                    echo '<p class="card-text">Quantidade: ' . $row['quant_1'] . '</p>';
+                    echo '<p class="card-text">Valor: ' . $row['valor_1'] . '</p>';
+                    echo '<a href="#" class="btn btn-primary">Go somewhere</a>';
+                    echo '</div></div>';
+                    echo '</div>';
+
+                    $contadorCards++;
+                }
+
+                echo '</div>';
+            }
+        } else {
+            echo 'Nenhum produto encontrado.';
+        }
+
+        $conn->close();
+        ?>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

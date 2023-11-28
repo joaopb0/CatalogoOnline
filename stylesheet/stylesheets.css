@@ -41,3 +41,11 @@ body{
     margin-left: 300px;
     background: black;
 }
+
+.containercard{
+    margin-left: 400px;
+    margin-top: -800px;
+    border: 2px transparent;
+    border-radius: 10px;
+    height: 700px;
+}
