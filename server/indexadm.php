@@ -43,7 +43,7 @@
         <a href="indexinsert.php"><button type="button" class="btn btn-success btn-block">Inserir</button></a>
         </div>
         <div class="col-md-6">
-          <a href="#"><button type="button" class="btn btn-warning btn-block">Visualizar</button></a>
+          <a href="viewadm.php"><button type="button" class="btn btn-warning btn-block">Visualizar</button></a>
         </div>
       </div>
     </div>
